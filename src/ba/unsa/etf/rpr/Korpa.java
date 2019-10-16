@@ -39,4 +39,12 @@ public class Korpa {
         }
         return artikli[trenutniBrojArtikala + 1];
     }
+
+    public int dajUkupnuCijenuArtikala() {
+        int suma = 0;
+        for(Artikl a : artikli) {
+            suma += a.getCijena();
+        }
+        return suma;
+    }
 }
