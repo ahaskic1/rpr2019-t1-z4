@@ -50,7 +50,7 @@ public class Main {
 //      unesena negativna, odnosno dovoljna suma novca.
 
         unosArtikalaUMarket();
-        /*for(;;){
+        for(;;){
             System.out.print("0 - odustani\n1 - dodaj u korpu\n2 - izbaci iz korpe\n3 - checkout\nUnesite opciju: ");
             Scanner scanner = new Scanner(System.in);
             int opcija = scanner.nextInt();
@@ -76,7 +76,7 @@ public class Main {
                     }
                 }
             }
-            else if(opcija == 2){
+            /*else if(opcija == 2){
                 System.out.println("Izbacivanje artikla iz korpe\nArtikli u korpi su: ");
                 ispisArtikala(korpa.getArtikli());
                 System.out.println("Unesite kod artikla (unesite malo slovo \"c\" za odustajanje): ");
@@ -99,8 +99,8 @@ public class Main {
                 if(iznos > cijena) System.out.println("Povratni iznos: " + (iznos - cijena));
                 System.out.println("Placeno, kupovina finalizirana.");
                 return;
-            }
-        }*/
+            }*/
+        }
 
     }
 }

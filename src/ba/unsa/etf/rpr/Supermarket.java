@@ -20,4 +20,25 @@ public class Supermarket {
         }
 
     }
+
+    //Getter
+
+    public Artikl[] getArtikli() {
+        return artikli;
+    }
+
+    public Artikl izbaciArtiklSaKodom(String kod) {
+        for(int i = 0; i < trenutniBrojArtikala; i++) {
+            if(artikli[i].getKod().equals(kod)){
+                for(int j = i; j < trenutniBrojArtikala - 1; j++) {
+                    Artikl temp = artikli[j];
+                    artikli[j] = artikli[j+1];
+                    artikli[j+1] = temp;
+                }
+                trenutniBrojArtikala--;
+                break;
+            }
+        }
+        return artikli[trenutniBrojArtikala + 1];
+    }
 }
