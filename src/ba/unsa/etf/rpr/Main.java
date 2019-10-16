@@ -76,7 +76,7 @@ public class Main {
                     }
                 }
             }
-            /*else if(opcija == 2){
+            else if(opcija == 2){
                 System.out.println("Izbacivanje artikla iz korpe\nArtikli u korpi su: ");
                 ispisArtikala(korpa.getArtikli());
                 System.out.println("Unesite kod artikla (unesite malo slovo \"c\" za odustajanje): ");
@@ -89,7 +89,7 @@ public class Main {
                     }
                 }
             }
-            else if(opcija == 3){
+            /*else if(opcija == 3){
                 int cijena = korpa.dajUkupnuCijenuArtikala(), iznos;
                 System.out.println("Ukupna cijena je " + korpa.dajUkupnuCijenuArtikala() + " KM.");
                 do{
