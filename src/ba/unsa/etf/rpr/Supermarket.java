@@ -28,6 +28,7 @@ public class Supermarket {
     }
 
     public Artikl izbaciArtiklSaKodom(String kod) {
+        Artikl vrati = new Artikl();
         for(int i = 0; i < trenutniBrojArtikala; i++) {
             if(artikli[i].getKod().equals(kod)){
                 for(int j = i; j < trenutniBrojArtikala - 1; j++) {
@@ -35,10 +36,12 @@ public class Supermarket {
                     artikli[j] = artikli[j+1];
                     artikli[j+1] = temp;
                 }
+                vrati = artikli[trenutniBrojArtikala - 1];
+                artikli[trenutniBrojArtikala - 1] = null;
                 trenutniBrojArtikala--;
                 break;
             }
         }
-        return artikli[trenutniBrojArtikala + 1];
+        return vrati;
     }
 }

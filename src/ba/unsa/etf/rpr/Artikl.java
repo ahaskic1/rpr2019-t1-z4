@@ -13,6 +13,9 @@ public class Artikl {
         this.kod = kodArtikla;
     }
 
+    public Artikl() {
+    }
+
     //Getters
 
     public String getNaziv() {
