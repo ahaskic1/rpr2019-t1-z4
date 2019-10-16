@@ -1,29 +1,29 @@
 package ba.unsa.etf.rpr;
 
 public class Artikl {
-    private String nazivArtikla;
-    private int cijenaArtikla;
-    private String kodArtikla;
+    private String naziv;
+    private int cijena;
+    private String kod;
 
     //Constructor
 
     public Artikl(String nazivArtikla, int cijenaArtikla, String kodArtikla) {
-        this.nazivArtikla = nazivArtikla;
-        this.cijenaArtikla = cijenaArtikla;
-        this.kodArtikla = kodArtikla;
+        this.naziv = nazivArtikla;
+        this.cijena = cijenaArtikla;
+        this.kod = kodArtikla;
     }
 
     //Getters
 
-    public String getNazivArtikla() {
-        return nazivArtikla;
+    public String getNaziv() {
+        return naziv;
     }
 
-    public int getCijenaArtikla() {
-        return cijenaArtikla;
+    public int getCijena() {
+        return cijena;
     }
 
-    public String getKodArtikla() {
-        return kodArtikla;
+    public String getKod() {
+        return kod;
     }
 }
